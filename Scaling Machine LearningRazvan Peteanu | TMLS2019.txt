@@ -1,0 +1,1 @@
+The talk will go through the pros and cons of several approaches to scale up machine learning, including very recent developments.Written by Razvan Peteanu’s current role is Lead Architect — Machine Learning at TD Securities. He has 25 years of experience in software development, mostly in the financial industry.
