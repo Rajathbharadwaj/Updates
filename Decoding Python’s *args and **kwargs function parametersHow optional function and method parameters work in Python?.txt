@@ -1,0 +1,1 @@
+While using Python functions, you must have bumped into *args (args) or **kwargs (kwargs) parameters. The actual syntax is * leading args while ** leading kwargs. And, the output will look something like this.Python surprises with its unique functionalities.
