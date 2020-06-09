@@ -1,0 +1,1 @@
+This data can be easily replaced with the latest income data that a brokerage firm might have access to. Now, the crisis has highlighted the social and economic costs of this crucial gap in the safety net. Such buyer-level information can be readily sourced from UCI’s Census income dataset.
