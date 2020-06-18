@@ -1111,12 +1111,449 @@ void renderScene() {
 		highSchool();
 	
 	
-	}
+	
 
 	// glFush sends it to the Display Buffer
 	glFlush();
 }
+// Function to Handle Mouse Clicks
+void mouseClick(int button, int state, int x, int y) {
+	if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN)
+		std::cout << x << "\t" << 800 - y << "\n";
+}
 
+// Animator Updation Function
+void update(int) {
+	// Introduction
+	if (SCENE_ID == 0) {
+		if (title_fade < 1)
+			title_fade += .003;
+		else
+			intro_next_text_appear = 1;
+	}
+
+	// Summary
+	if (SCENE_ID == 1) {
+		if (summary_para1_fade < 1)
+			summary_para1_fade += .02;
+		else
+			if (summary_para2_fade < 1)
+				summary_para2_fade += .02;
+			else
+				if (summary_para3_fade < 1)
+					summary_para3_fade += .02;
+				else
+					if (summary_para4_fade < 1)
+						summary_para4_fade += .02;
+					else
+						summary_next_text_appear = 1;
+	}
+
+	// Kindergarten Title Screen
+	if (SCENE_ID == 2) {
+		if (trans_x_chap1 < 100)
+			trans_x_chap1 += 1;
+
+		if (trans_x_title1 < 100)
+			trans_x_title1 += 1;
+
+		if (kg_chap_fade < 1)
+			kg_chap_fade += .025;
+
+		if (kg_title_fade < 1)
+			kg_title_fade += .025;
+	}
+
+	// Kindergarten
+	if (SCENE_ID == 3) {
+		if (kg_a_fade < 1)
+			kg_a_fade += .025;
+			else
+				if (kg_apple_fade < 1)
+					kg_apple_fade += .025;
+				else
+					if (kg_b_fade < 1)
+						kg_b_fade += .025;
+					else
+						if (kg_ball_fade < 1)
+							kg_ball_fade += .025;
+						else
+							if (kg_soon_fade < 1)
+								kg_soon_fade += .025;
+							else
+								kg_subtitle_1_appear = 1;
+
+	}
+
+	// Primary School Title Screen
+	if (SCENE_ID == 4) {
+		if (trans_x_chap2 < 100)
+			trans_x_chap2 += 1;
+
+		if (trans_y_title2 < 100)
+			trans_y_title2 += 1;
+
+		if (ps_chap_fade < 1)
+			ps_chap_fade += .01;
+
+		if (ps_title_fade < 1)
+			ps_title_fade += .01;
+	}
+
+	// Primary School
+	if (SCENE_ID == 5) {
+		if (trans_x_kid1 < 40)
+			trans_x_kid1 += .4;
+
+		if (trans_x_kid2 < wp_tb_big)
+			trans_x_kid2 += .3;
+
+		if (trans_x_kid3 < 40)
+			trans_x_kid3 += .3;
+
+		if (trans_x_ball < 50)
+			trans_x_ball += .4;
+
+		if (ps_subtitle_1_appear < 1)
+			ps_subtitle_1_appear += .005;
+		else {
+			if (ps_subtitle_2_appear < 1) {
+				trans_subtitle_1_done = 200;
+				ps_subtitle_2_appear += .005;
+			}
+		}
+	}
+
+	// High School Title Screen
+	if (SCENE_ID == 6) {
+		if (trans_x_chap3 < 100)
+			trans_x_chap3 += 1;
+
+		if (trans_x_title3 < 100)
+			trans_x_title3 += 1;
+
+		if (hs_chap_fade < 1)
+			hs_chap_fade += .01;
+
+		if (hs_title_fade < 1)
+			hs_title_fade += .01;
+	}
+
+	// High School
+	if (SCENE_ID == 7) {
+		if (!chapter_1_done) {
+			delay(1);
+			schoolboy_y -= 5000;
+			chapter_1_done = true;
+		}
+
+		if (chapter_1_done && !chapter_2_done) {
+			if (schoolboy_x >= 300) {
+				schoolboy_x -= 5;
+			} else {
+				schoolboy_y += 5000;
+				chapter_2_done = true;
+			}
+		}
+
+		if (chapter_1_done && chapter_2_done && !chapter_3_done && !sun_has_set) {
+			if (sun_r <= 255)
+				sun_r += .25;
+			if (sun_g <= 255)
+				sun_g += .25;
+			if (sun_b <= 255)
+				sun_b += .25;
+
+			if (star_alpha <= 200)
+				star_alpha += 1;
+
+			if (grass_r <= 255)
+				grass_r += .25;
+			if (grass_g <= 220)
+				grass_g += .25;
+			if (grass_b >= 65)
+				grass_b += .25;
+
+			if (window_top_r <= 255)
+				window_top_r += .25;
+			if (window_top_g <= 220)
+				window_top_g += .25;
+			if (window_top_b >= 65)
+				window_top_b -= .25;
+
+			if (window_bottom_r <= 255)
+				window_bottom_r += .25;
+			if (window_bottom_g <= 220)
+				window_bottom_g += .25;
+			if (window_bottom_b >= 65)
+				window_bottom_b -= .25;
+
+			if (sky_r <= 0)
+				sky_r += .25;
+			if (sky_g >= 0)
+				sky_g -= .25;
+			if (sky_b >= 0)
+				sky_b -= .25;
+
+			if (sun_move_left < 1100)
+				sun_move_left += 1.5;
+			else
+				sun_has_set = true;
+
+			if (sun_move_left > 500)
+				sun_moved_half = true;
+		}
+
+		if (sun_moved_half && !chapter_4_done) {
+			if (schoolboy_y != 220)
+				schoolboy_y -= 5000;
+
+			if (schoolboy_x >= -1000)
+				schoolboy_x -= 5;
+			else {
+				schoolboy_y += 5000;
+				chapter_4_done = true;
+			}
+		}
+
+		if (chapter_4_done) {
+			if (schoolboy_y != 5220 && !tuition_done) {
+				schoolboy_y += 5000;
+				tuition_done = true;
+			}
+		}
+
+		if (sun_has_set) {
+			if (schoolboy_y != 220)
+				schoolboy_y -= 5000;
+			chapter_5_done= true;
+		}
+
+		if (chapter_5_done) {
+			if (schoolboy_x <= 1150)
+				schoolboy_x += 5;
+			else {
+				if (schoolboy_y != 5220)
+					schoolboy_y += 5000;
+			}
+
+			if (hs_subtitle_1_appear < 1) {
+				hs_subtitle_1_appear += .005;
+			}
+		}
+	}
+
+	// Pre University College Title Screen
+	if (SCENE_ID == 8) {
+		if (trans_x_chap4 < 100)
+			trans_x_chap4 += 1;
+
+		if (trans_x_title4 < 100)
+			trans_x_title4 += 1;
+
+		if (puc_chap_fade < 1)
+			puc_chap_fade += .01;
+
+		if (puc_title_fade < 1)
+			puc_title_fade += .01;
+	}
+
+	// Pre University College
+	if (SCENE_ID == 9) {
+		if (puc_subtitle_1_fade < 1)
+			puc_subtitle_1_fade += 0.005;
+
+		if (!puc_begin_anim) {
+			delay(1);
+			puc_begin_anim = true;
+		}
+
+		if (!puc_end_anim) {
+			if (trans_x_sb1 >= -930)
+				trans_x_sb1 -= 1;
+			if (trans_y_sb1 <= -20)
+				trans_y_sb1 += .1;
+
+			if (trans_x_sb2 >= -1930)
+				trans_x_sb2 -= 1;
+			if (trans_y_sb2 <= -20)
+				trans_y_sb2 += .1;
+
+			if (trans_y_sb1 >= -20 && trans_y_sb2 >= -20)
+				puc_end_anim = true;
+		}
+
+		if (puc_end_anim) {
+			delay(1);
+
+			if (trans_y_sb1 <= 5000)
+				trans_y_sb1 += 5000;
+
+			if (trans_y_sb2 <= 5000)
+				trans_y_sb2 += 5000;
+		}
+	}
+
+	// Engineering College Title Screen
+	if (SCENE_ID == 10) {
+		if (trans_x_chap5 < 100)
+			trans_x_chap5 += 1;
+
+		if (trans_x_title5 < 100)
+			trans_x_title5 += 1;
+
+		if (eng_chap_fade < 1)
+			eng_chap_fade += .025;
+
+		if (eng_title_fade < 1)
+			eng_title_fade += .025;
+	}
+
+	if (SCENE_ID == 11) {
+		if (trans_x_ec_sb1 >= -180)
+			trans_x_ec_sb1 -= 4;
+		if (trans_x_ec_sb2 >= -2050)
+			trans_x_ec_sb2 -= 4;
+
+		if (trans_x_ec_sb1 <= -180 && trans_x_ec_sb2 <= -2050 && !ec_graduation_done) {
+			trans_y_ec_sb += 1000;
+			ec_graduation_done = true;
+		}
+
+		if (ec_graduation_done) {
+			if (trans_y_ec_gb != 40) {
+				trans_y_ec_gb -= 1000;
+			}
+			if (trans_x_ec_gb >= -1200)
+				trans_x_ec_gb -= 2;
+		}
+
+		if (ec_subtitle_1_fade <= 1)
+			ec_subtitle_1_fade += 0.005;
+	}
+
+	if (SCENE_ID == 12) {
+		if (trans_x_chap6 < 100)
+			trans_x_chap6 += 1;
+
+		if (trans_x_title6 < 100)
+			trans_x_title6 += 1;
+
+		if (wp_chap_fade < 1)
+			wp_chap_fade += .025;
+
+		if (wp_title_fade < 1)
+			wp_title_fade += .025;
+	}
+
+	if (SCENE_ID == 13) {
+		if (server_on) {
+			server_on = false;
+		} else {
+			server_on = true;
+		}
+
+		if (!wp_tb_s1_done) {
+			if (wp_tb_s1 <= 10)
+				wp_tb_s1 += .25;
+			else
+				wp_tb_s1_done = true;
+		}
+
+		if (light_a) {
+			light_a = false;
+			light_b = true;
+			light_c = false;
+			light_d = false;
+		} else if (light_b) {
+			light_a = false;
+			light_b = false;
+			light_c = true;
+			light_d = false;
+		} else if (light_c) {
+			light_a = false;
+			light_b = false;
+			light_c = false;
+			light_d = true;
+		} else {
+			light_a = true;
+			light_b = false;
+			light_c = false;
+			light_d = false;
+		}
+
+		if (wp_tb_s1_done && !wp_tb_s2_done) {
+			if (wp_tb_s2 <= 12)
+				wp_tb_s2 += .25;
+			else
+				wp_tb_s2_done = true;
+		}
+
+		if (wp_tb_s1_done && wp_tb_s2_done && !wp_tb_s3_done) {
+			if (wp_tb_s3 <= 14)
+				wp_tb_s3 += .25;
+			else
+				wp_tb_s3_done = true;
+		}
+
+		if (wp_tb_s1_done && wp_tb_s2_done && wp_tb_s3_done && !wp_tb_big_done) {
+			if (wp_tb_big <= 30)
+				wp_tb_big += .5;
+			else
+				wp_tb_big_done = true;
+		}
+
+		if (wp_tb_s1_done && wp_tb_s2_done && wp_tb_s3_done && wp_tb_big_done) {
+			if (wp_tb_text <= 1)
+				wp_tb_text += .005;
+
+			if (wp_subtitle_1_fade <= 1)
+				wp_subtitle_1_fade += .005;
+		}
+	}
+
+	// Epilogue
+	if (SCENE_ID == 14) {
+		if (epilogue_para1_fade < 1)
+			epilogue_para1_fade += .02;
+		else
+			if (epilogue_para2_fade < 1)
+				epilogue_para2_fade += .02;
+			else
+				if (epilogue_para3_fade < 1)
+					epilogue_para3_fade += .02;
+				else
+					if (epilogue_para4_fade < 1)
+						epilogue_para4_fade += .02;
+					else
+						if (epilogue_para5_fade < 1)
+							epilogue_para5_fade += .02;
+						else
+							if (epilogue_para6_fade < 1)
+								epilogue_para6_fade += .02;
+	}
+
+	// Morals
+	if (SCENE_ID == 15) {
+		if (moral_para1_fade < 1)
+			moral_para1_fade += .02;
+		else
+			if (moral_para2_fade < 1)
+				moral_para2_fade += .02;
+			else
+				if (moral_para3_fade < 1)
+					moral_para3_fade += .02;
+				else
+					if (moral_para4_fade < 1)
+						moral_para4_fade += .02;
+	}
+
+	// Recalls the Display Function
+	glutPostRedisplay();
+
+	// Creates a Timer of 25ms
+	glutTimerFunc(25, update, 0);
+}
 void keyPress(unsigned char key, int x, int y) {
 	switch (key) {
 	// Go to Previous Scene
