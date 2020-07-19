@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" media="all" href="readme.css" />
+<link rel="stylesheet" type="text/css" media="all" href="https://raw.githubusercontent.com/Rajathbharadwaj/Updates/master/readme.css" />
 
 <h1 align="center">Hi 👋, I'm Rajath</h1>
 <h3 align="center">A passionate ML and DL enthusiast with NodeJS expertise from India. 
