@@ -1,5 +1,7 @@
 <h1 align="center">Hi 👋, I'm Rajath</h1>
-<h3 align="center">A passionate ML and DL enthusiast with NodeJS expertise from India. PS: I'm all about that gradient descent in the global maxima. :D</h3>
+<h3 align="center">A passionate ML and DL enthusiast with NodeJS expertise from India. 
+  <br>
+  PS: I'm all about that gradient descent in the global maxima. :D</h3>
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=rajathbharadwaj" alt="rajathbharadwaj" /> </p>
 
 - 🔭 I’m currently working on **Getting my Medium articles approved on TDS**
