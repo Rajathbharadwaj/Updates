@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" media="all" href="https://raw.githubusercontent.com/Rajathbharadwaj/Updates/master/readme.css" />
-
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 <h1 align="center">Hi 👋, I'm Rajath</h1>
 <h3 align="center">A passionate ML and DL enthusiast with NodeJS expertise from India. 
   <br>
