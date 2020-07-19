@@ -25,4 +25,5 @@
 <a href="https://linkedin.com/in/rajath-bharadwaj-513788104" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="in/rajath-bharadwaj-513788104" height="20" width="20" /></a>
 <a href="https://stackoverflow.com/users/9183985/rajath-bharadwaj" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg" alt="users/9183985/rajath-bharadwaj" height="20" width="20" /></a>
 <a href="https://instagram.com/rajath_bharadwaj" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="rajath_bharadwaj" height="20" width="20" /></a>
+  <a href="https://www.youtube.com/channel/UCaCbzU3ZSLu27HPu_-Rcnwg?view_as=subscriber" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg" alt="rajath_bharadwaj" height="20" width="20" /></a>
 </p>
