@@ -14,8 +14,7 @@
 
 - 💬 Ask me about **Anything and everything on ML/DL/CV/NLP..... I'll help if I know, else I'll learn too. :D**
 
-- 📫 How to reach me **Twitter -> https://twitter.com/Rajath_DB ; Instagram -> https://www.instagram.com/rajath_bharadwaj/ ; My Professional email -> rajathbharadwaj@alphazoneai.com ; YouTube -> https://www.youtube.com/channel/UCaCbzU3ZSLu27HPu_-Rcnwg?view_as=subscriber **
-
+- 📫 How to reach me **Twitter -> https://www.instagram.com/rajath_bharadwaj/
 - ⚡ Fun fact **I rap and generate lyrics using DL as a hobby and create YouTube tutorials. **
 
 <p align="left"><img src="https://konpa.github.io/devicon/devicon.git/icons/android/android-original-wordmark.svg" alt="android" width="20" height="20"/> <img src="https://konpa.github.io/devicon/devicon.git/icons/bootstrap/bootstrap-plain.svg" alt="bootstrap" width="20" height="20"/> <img src="https://konpa.github.io/devicon/devicon.git/icons/django/django-original.svg" alt="django" width="20" height="20"/> <img src="https://konpa.github.io/devicon/devicon.git/icons/docker/docker-original-wordmark.svg" alt="docker" width="20" height="20"/> <img src="https://konpa.github.io/devicon/devicon.git/icons/electron/electron-original.svg" alt="electron" width="20" height="20"/> <img src="https://konpa.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg" alt="javascript" width="20" height="20"/> <img src="https://konpa.github.io/devicon/devicon.git/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="20" height="20"/> <img src="https://konpa.github.io/devicon/devicon.git/icons/python/python-original-wordmark.svg" alt="python" width="20" height="20"/></p><p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=https://github.com/rajathbharadwaj&show_icons=true" alt="https://github.com/rajathbharadwaj" /> </p>
