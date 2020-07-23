@@ -1,0 +1,1 @@
+As an example, when we use + operator, the special method of __add__ is invoked. Consider the len() built-in function which returns the number of objects in a sequence or collection. Take a lookCreate a free Medium account to get The Daily Pick in your inbox.Written byWritten by Make learning your daily ritual.
