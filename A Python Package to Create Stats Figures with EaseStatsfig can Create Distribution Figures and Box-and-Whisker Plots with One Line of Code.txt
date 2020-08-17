@@ -1,0 +1,1 @@
+You can use one of the characters {'b', 'g', 'r', 'c', 'm', 'y', 'k', 'w'}, which are short-hands for blue, green, red, cyan, magenta, yellow, black, and white. Sometimes you may need a distribution figure for your slide or class. I’d love to hear any comments about the package. Make learning your daily ritual.
