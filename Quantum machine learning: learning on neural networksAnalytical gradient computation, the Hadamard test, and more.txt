@@ -1,0 +1,1 @@
+η is a small number which controls by how much we change θᵢ every time we update it.Why do we need η to be small? My last articles tackled Bayes nets on quantum computers (read it here! Take a lookWritten byWritten by Make learning your daily ritual.
