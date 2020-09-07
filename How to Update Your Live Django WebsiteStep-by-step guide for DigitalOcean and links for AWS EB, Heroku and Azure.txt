@@ -1,0 +1,1 @@
+Make them locally but do the migration on the server because migration files are part of the source code and shouldn’t be tampered with on the server. Do not make migrations — refer to Step 3.Step 10: Restart Gunicorn (your WSGI server) to apply the changes. Make learning your daily ritual.
