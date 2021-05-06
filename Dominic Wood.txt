@@ -1,0 +1,1 @@
+Complex is better than complicated. Sign inPublished in Towards Data Science·2 hours agoEfficient code, more often than not, is Pythonic code. Explicit is better than implicit. Simple is better than complex. Flat is better than nested. Sparse is better than dense. Special cases aren't special enough to break the rules.
