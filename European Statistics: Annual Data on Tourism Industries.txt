@@ -1,0 +1,1 @@
+ The javascript feature of your browser needs to be enabled in order to access to the full feature enabled navigation tree. But a non javascript version of the tree exists, even if the proposed features are reduced. You can access the non javascript navigation tree by clicking here.
