@@ -1,0 +1,1 @@
+By using SHAP (a popular explainable AI tool) we can decompose measures of fairness and allocate responsibility for any observed disparity among each of the model’s input features.
